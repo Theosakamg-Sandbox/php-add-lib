@@ -2,9 +2,16 @@
 
 class AddCommand
 {
+    private $current = 0;
 
-    public function add(int $a, int $b) : int {
-        return $a + $b;
+    public function __construct(int $a) {
+        $this->current = $a;
+    }
+
+    public function do(int $b) : int {
+        $this->current += $b;
+
+        return $this->current;
     }
 }
 
