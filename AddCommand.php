@@ -1,6 +1,7 @@
 <?php
+include_once 'php-common-lib/Command.php';
 
-class AddCommand
+class AddCommand implements Command
 {
     private $current = 0;
 
